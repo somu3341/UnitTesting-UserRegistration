@@ -11,5 +11,11 @@ namespace UnitTesting_UserRegistration
                 return "Valid";
             return "InValid";
         }
+        public string UserSecond(string name)
+        {
+            if (Regex.IsMatch(name, USER_NAME))
+                return "Valid";
+            return "InValid";
+        }
     }
 }
